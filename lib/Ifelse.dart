@@ -89,69 +89,71 @@ class _IfElsesState extends State<IfElses> {
           style: TextStyle(color: Colors.white),
         ),
       ),
-      body: Center(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(14.0),
-              child: TextField(
-                controller: textEditingController,
-                decoration: InputDecoration(
-                  helperText: "Enter Your Values",
-                  hintText: "Enter your Input",
+      body: SingleChildScrollView(
+        child: Center(
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(14.0),
+                child: TextField(
+                  controller: textEditingController,
+                  decoration: InputDecoration(
+                    helperText: "Enter Your Values",
+                    hintText: "Enter your Input",
+                  ),
                 ),
               ),
-            ),
-            ElevatedButton(
-                onPressed: () => CheckTextIsEmpty(),
-                child: Text("Check Text Is Emppty Or Not?")),
-            SizedBox(
-              height: 10,
-            ),
-            ElevatedButton(
-                onPressed: () => Numbers(),
-                child: Text("Input Value Is Negative/Positive Or Zero?")),
-            SizedBox(
-              height: 10,
-            ),
-            ElevatedButton(
-                onPressed: () => CheckOddEven(),
-                child: Text("Value Is Odd Or Even?")),
-            SizedBox(
-              height: 10,
-            ),
-            ElevatedButton(
-                onPressed: () => LeapYears(),
-                child: Text("Input Year is Leap Or Not?")),
-            SizedBox(
-              height: 10,
-            ),
-            ElevatedButton(
-                onPressed: () => checkVowelConsonant(),
-                child: Text("Check Character is Vowel Or Not??")),
-            SizedBox(
-              height: 10,
-            ),
-            ElevatedButton(
-                onPressed: () => Lowercases(),
-                child: Text("Check Input Is In Uppercase Or Lowercase?")),
-            SizedBox(
-              height: 10,
-            ),
-            ElevatedButton(
-                onPressed: () {},
-                child: Text("Check Value Is Special Char/Digit/Alphabet?")),
-            SizedBox(
-              height: 20,
-            ),
-            Container(
-              color: Colors.amber,
-              child: Text(
-                "Result = $Answer",
-                style: TextStyle(fontSize: 20),
+              ElevatedButton(
+                  onPressed: () => CheckTextIsEmpty(),
+                  child: Text("Check Text Is Emppty Or Not?")),
+              SizedBox(
+                height: 10,
               ),
-            )
-          ],
+              ElevatedButton(
+                  onPressed: () => Numbers(),
+                  child: Text("Input Value Is Negative/Positive Or Zero?")),
+              SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                  onPressed: () => CheckOddEven(),
+                  child: Text("Value Is Odd Or Even?")),
+              SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                  onPressed: () => LeapYears(),
+                  child: Text("Input Year is Leap Or Not?")),
+              SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                  onPressed: () => checkVowelConsonant(),
+                  child: Text("Check Character is Vowel Or Not??")),
+              SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                  onPressed: () => Lowercases(),
+                  child: Text("Check Input Is In Uppercase Or Lowercase?")),
+              SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                  onPressed: () {},
+                  child: Text("Check Value Is Special Char/Digit/Alphabet?")),
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                color: Colors.amber,
+                child: Text(
+                  "Result = $Answer",
+                  style: TextStyle(fontSize: 20),
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
