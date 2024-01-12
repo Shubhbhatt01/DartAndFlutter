@@ -34,6 +34,7 @@ class Myimage extends StatelessWidget {
                 width: 150,
                 child: Image.network("https://picsum.photos/200")),
           ],
+          
         ),
       ),
     );
